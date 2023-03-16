@@ -35,7 +35,6 @@ frame(fighter.lua_state_agent, 2.0);
 unsafe fn edge_attackairn_fx(fighter: &mut L2CAgentBase) {
     frame(fighter.lua_state_agent, 5.0);
     if macros::is_excute(fighter) {
-        //macros::EFFECT_FOLLOW_WORK(fighter, Hash40::new("edge_sword_smash_flash"), Hash40::new("swordr1"), 0.0, 0.0, 0.0, 0.0, 180, -90, 1, true);
         macros::EFFECT_FOLLOW(fighter, Hash40::new("edge_sword_smash_flash"), Hash40::new("swordr1"), 0.0, 0.0, 0.0, 0.0, 180, -90, 1, true);
 		macros::LAST_EFFECT_SET_OFFSET_TO_CAMERA_FLAT(fighter, 0.2);
         macros::AFTER_IMAGE4_ON_arg29(fighter, Hash40::new("tex_edge_sword1"), Hash40::new("tex_edge_sword2"), 12, Hash40::new("swordr1"), -4.0, 0.0, -0.6, Hash40::new("swordr1"), 29.0, 0.0, -1.4, true, Hash40::new("null"), Hash40::new("swordr1"), 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0 as u64, *EFFECT_AXIS_X, 0.0 as u64, *TRAIL_BLEND_ALPHA, 101, *TRAIL_CULL_NONE, 1.4, 0.1);
